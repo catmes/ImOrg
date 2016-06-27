@@ -1,5 +1,5 @@
 import PhoOrg
- 
+
 # Subclass of PhoOrg that handles select image exif data and
 # outputs specific exif data via class method.
 class ExifRead(PhoOrg.SngIm):

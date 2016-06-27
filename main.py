@@ -18,16 +18,14 @@ def mk_clean_images(images):
 				clean_images.append(image)
 		except IOError:
 			pass
-			
-		
- 
-    return clean_images
- 
+
+		return clean_images
  
 # User input directory.
 script, images = argv
+
  
-# Making a unclean_images test dir.
+# Making an unclean_images test dir.
 images_dir = os.path.join(images)
 clean_images = mk_clean_images(images_dir)
 # Cleaning up unclean_images.
