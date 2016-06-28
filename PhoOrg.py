@@ -25,10 +25,4 @@ class SngIm(object):
  
         return exif
 
-# SortImages takes provided, unsorted image directory and creates a series of directories containing
-# images. New images are sorted into directories based upon a chosen attribute e.g. date, size, ISO.
-class SortImages(object):
 
-    def __init__(self):
-
-    def sort_date(self):
