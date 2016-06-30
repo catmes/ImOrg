@@ -46,9 +46,9 @@ image_values = ['rgb', 'gif', 'pbm', 'ppm', 'tiff', 'rast', 'xbm'
 def mk_clean_images(user_images):
     """ A function that sorts non images and non jpegs.
 
-    Predicting that the given directory won't always be consisting of photos and only jpegs, mk_clean_images filters
-    out everything that is not a jpeg. After the filtering, a list of clean_images is left - images that won't make the
-    program crash.
+    Predicting that the given directory won't always be consisting of photos and only jpegs,
+    mk_clean_images filters out everything that is not a jpeg. After the filtering,
+    a list of clean_images is left - images that won't make the program crash.
 
     Args:
         user_images - chosen user image dir
@@ -81,10 +81,12 @@ def mk_clean_images(user_images):
 
 
 def mk_data(cleaned_images):
-    """ A function that takes clean_images and returns useful EXIF data for each image via dictionary.
+    """ A function that takes clean_images and returns useful
+        EXIF data for each image via dictionary.
 
-    mk_data takes images that have gone through mk_clean_images and provides certain EXIF data for each photo in
-    clean_images list via the method get_stats from the ExifRead class. The image is paired with its EXIF in the form
+    mk_data takes images that have gone through mk_clean_images and provides
+    certain EXIF data for each photo in clean_images list via the method get_stats
+    from the ExifRead class. The image is paired with its EXIF in the form
     of key-value value pair (image : EXIF data).
 
     Args:
@@ -106,9 +108,10 @@ def mk_data(cleaned_images):
 def split_data(images_with_data):
     """A simple function that makes mk_data more readable.
 
-    mk_data returns a very large dictionary with yet even more dictionaries on the inside of the very large dictionary!
-    So in order to make the return of mk_data more readable, split_data simply uses some string formatting
-    to make the return of mk_data easier on the eyes and is alphabetically ordered.
+    mk_data returns a very large dictionary with yet even more dictionaries
+    on the inside of the very large dictionary! So in order to make the return of mk_data
+    more readable, split_data simply uses some string formatting to make the return of
+    mk_data easier on the eyes as well as being alphabetically ordered.
 
     Args:
         images_with_data - cleaned_images that have gone through mk_data
