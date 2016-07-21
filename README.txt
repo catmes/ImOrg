@@ -29,7 +29,7 @@ Planned features:
 
 HOWTO:
     1. Locate the folder of images that you wish to use.
-    2. Place selected folder in Dropzone, this is where the EXIF Data is read.
+    2. Place selected folder in main.py dir, this is where the EXIF Data is read.
     3. Open command line and enter the following command "python main.py myfolder".
     4. After you have entered in the command, you should recieve text output of the EXIF Data for your images via the command line.
 
